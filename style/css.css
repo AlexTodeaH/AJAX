@@ -1,0 +1,412 @@
+
+/* HEADER */
+nav {
+  background-color: #0d1321;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  color: #fae22f;
+  text-align: left;
+  letter-spacing: 1px;
+  font-family: 'Lalezar', Verdana;
+  transition: all .3s linear;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color:#fae22f;
+  text-shadow: 3px 3px #962222;
+}
+
+.iconoMenu {
+  width:50px;
+}
+
+.iconoLupa {
+  width:25px;
+}
+
+nav div ul {
+  overflow: hidden;
+  background-color: #fae22f;
+}
+
+nav div ul li{
+  float:left;
+}
+
+.nav-link {
+  transition: all .5s linear;
+  display: block;
+  font-family: 'Dosis',Verdana;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  color: #0d1321;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding:15px;
+  background: linear-gradient(to right, #0d1321 40%, #fae22f 100%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 80%;
+}
+nav div ul .nav-item .active,nav div ul .nav-item .active:hover  {
+  background-color: #0d1321;
+  color: #fae22f;
+  border-left: 2px solid #fae22f;
+  border-right: 2px solid #fae22f;
+}
+ul li a:hover:not(.active) {
+  background-size: 100% 2px;
+  text-decoration: none;
+  color:black;
+}
+
+/* MOVILES */
+
+@media screen and (max-width: 470px) {
+
+  .actExtremas {
+    margin: 0 auto;
+    margin-top: 25%;
+  }
+
+  .actExtremas img{
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .usuario img {
+    display:none;
+  }
+
+  .form-control {
+    margin-top:10px;
+  }
+
+  .input-group-addon {
+    margin-top: 10px;
+  }
+
+  section h2 {
+    font-size:2em;
+    font-family: 'Dosis';
+    margin-top: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+  }
+
+  section .flecha {
+    margin:0;
+  }
+
+  .descenso img {
+    margin-top:50px;
+  }
+
+  .descenso h2 {
+    margin-top:0px;
+  }
+
+  .boxeo img {
+    margin-top:50px;
+  }
+
+  .boxeo h2 {
+    margin-top:50px;
+  }
+
+}
+
+/* TABLETS */
+
+@media screen and (max-width: 992px) and (min-width: 471px) {
+
+  .actExtremas {
+    margin: 0 auto;
+    margin-top: 15%;
+  }
+
+  .actExtremas img{
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    margin-left:0;
+  }
+
+  .form-control {
+    margin-top:10px;
+  }
+
+  .input-group-addon {
+    margin-top: 10px;
+  }
+
+  section h2 {
+    font-size:2.5em;
+    margin-bottom: 30px;
+    font-family: 'Dosis';
+    margin-top: 40px;
+    letter-spacing: 7.5px;
+  }
+
+}
+
+/* ORDENADOR */
+
+@media screen and (min-width: 993px) {
+
+  .actExtremas {
+    margin: 0 auto;
+    margin-top: 8%;
+  }
+
+  .actExtremas img{
+    width: 100%;
+    min-height: 300px;
+  }
+
+  section h2 {
+    font-size:3em;
+    font-family: 'Dosis';
+    margin-top: 60px;
+    margin-bottom: 40px;
+    letter-spacing: 10px;
+  }
+
+  }
+nav .usuario a {
+  letter-spacing: 1px;
+  font-family: 'Dosis';
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+  transition: all .2s linear;
+}
+
+nav .usuario a:hover {
+  font-size:15px;
+  text-decoration: underline;
+}
+
+nav .usuario a img {
+  width:25px;
+  margin-right:5px;
+}
+
+/* ACTIVIDADES EXTREMAS */
+
+
+.display-3 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 3.5em;
+    font-family: 'Dosis';
+    font-weight: normal;
+    letter-spacing: 0.4em;
+  }
+
+.actExtremas article {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 30px 0px 30px 30px;
+  -moz-border-radius: 30px 0px 30px 30px;
+  -webkit-border-radius: 30px 0px 30px 30px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.actExtremas article h2 {
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Dosis',Verdana;
+  font-weight: bold;
+  text-shadow: 3px 3px #000;
+  padding-top:10px;
+  letter-spacing: 2px;
+  text-align: center;}
+
+.actExtremas article p {
+  color: black;
+  font-size: 0.95em;
+  font-family: 'Dosis';
+  letter-spacing: 0.05em;
+  padding: 0.6em;
+  background-color: rgba(255,255,255,0.7);
+}
+.actExtremas article input {
+  float:right;
+  width: 150px;
+  height: 70px;
+}
+/*   PROMOCIONES    */
+
+section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+section .flecha {
+  width: 30px;
+  height: 40px;
+}
+section img{
+  width: 230px;
+  height: 250px;
+  margin:15px;
+}
+/* SLIDER */
+
+.mySlides {display:none}
+
+/* BOXEO */
+
+.noticias {
+  margin: 15px 0;
+}
+
+.come-in-left {
+  transform: translateX(-700px);
+  opacity:0;
+  animation: come-in 1.2s ease forwards;
+}
+
+.come-in-left:nth-child(odd) {
+  animation-duration: 1s;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+
+
+.boxeo h2 {
+  font-family: 'Dosis';
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-weight: initial;
+  margin-top:30px;
+}
+
+.descenso h2 {
+  font-family: 'Dosis';
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-weight: initial;
+  margin-top:90px;
+}
+
+.boxeo p {
+  letter-spacing: 1.5px;
+  font-family: Verdana;
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.boxeo img {
+  margin-top:30px;
+}
+
+/* DESCENSO */
+
+
+.come-in-right {
+  transform: translateX(700px);
+  opacity:0;
+  animation: come-in 1.2s ease forwards;
+}
+
+.come-in-right:nth-child(odd) {
+  animation-duration: 1s;
+}
+
+.descenso p {
+  letter-spacing: 1.5px;
+  font-family: Verdana;
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.descenso img {
+  margin-top:100px;
+}
+
+.linea {
+  margin-top: 60px;
+  height: 2px;
+  background-color: #6e6e6e;
+}
+
+/*   REDES SOCIALES    */
+
+figure {
+  margin-top:50px;
+  text-align: center;
+  height: 100px;
+}
+
+figure a img {
+  width: 50px;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+  background-color: #0d1321;
+  color: white;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding-top: 5px;
+  padding-left: 5%;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer ul li a {
+  list-style-type: none;
+  font-family: Verdana;
+  color:white;
+  float:left;
+  padding: 10px;
+}
+footer ul li a:hover {
+  font-weight: bold;
+  color:white !important;
+}
+
+/* COOKIES */
+
+.cookies {
+  position:fixed;
+  bottom: 0;
+  background-color: black;
+}
+
+.cookies p {
+  color:white;
+  padding: 0 10px;
+  font-family: 'Dosis',Verdana;
+}
+
+.cookies p a {
+  color:yellow;
+  font-size:16px;
+}
+
+.cerrar {
+  cursor:pointer;
+}

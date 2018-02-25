@@ -1,0 +1,13 @@
+{
+	"productos": [
+		{ "id": 1, "nombre":"Zapatillas"},
+		{ "id": 2, "nombre":"Camisetas"},
+		{ "id": 3, "nombre":"Sudaderas"},
+		{ "id": 4, "nombre":"Equipaciones"},
+		{ "id": 5, "nombre":"Baloncesto"},
+		{ "id": 6, "nombre":"Futbol"},
+		{ "id": 7, "nombre":"Futbol americano"},
+		{ "id": 8, "nombre":"Futbol 7"},
+		{ "id": 9, "nombre":"Futbol 11"}
+	]
+}

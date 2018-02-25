@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style/cssForm.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Lalezar' rel='stylesheet'>
+</head>
+<body>
+<div id="formulario">
+	<h1>ABSports</h1>
+		<ul class="opciones">
+        	<li class="current" data-tab="#logIn">LOG IN</li>
+        	<li class="tab" data-tab="#signUp">SIGN UP</a></li>
+      	</ul>
+	<form id="logIn" action="index.html" class="registro current">
+		
+		<label for="user">USERNAME</label>
+			<input name="user" type="text" onmouseover="style.background='white'">
+		<label for="password">PASSWORD</label>
+			<input name="password" type="password" onmouseover="style.background='white'">
+		<button id="conect" class="boton">LOG IN</button>
+	</form>
+
+	<form id="signUp" class="registro">
+		
+		<label>NAME AND SURNAME</label>
+			<input name="nombre" type="text" pattern="[A-Za-z]+\s[A-Za-z]+" required >
+		<label >E-MAIL</label>
+			<input name="correo" type="email" required>
+		<label>PASSWORD<span>MAY,min,núm,símbolo,{8,}</span></label>
+			<input name="password" class="password" type="password" pattern="(?=.*[^a-zA-Z\d\s:])(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+		<label>CONFIRM PASSWORD</label>
+			<input name="confPassword" id="confPassword" type="password" pattern="(?=.*[^a-zA-Z\d\s:])(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+	<div class="fechaNac">		
+		<label>DATE OF BIRTH*</label>
+			<input name="fechaNac" type="date">
+	</div>
+        <div class="genero">
+        <label>GENDER*</label>
+          <input type="radio" name="genero" value="male" id="gender-male"/>
+          <label >M</label>
+          <input type="radio" name="genero" value="female" id="gender-female"/>
+          <label>F</label>
+        </div>
+		<label>ADDRESS*</label>
+			<input name="direccion" type="text">
+		<label>COUNTRY*</label>
+			<select id="pais" name="pais">
+			</select>
+		<div class="tarjeta">
+		<label>CREDIT CARD</label>
+			<input name="tarjeta" type="text">	
+		</div>	
+<div class="suscripciones">
+      	<input type="checkbox" value="novedades" name="check" checked />
+      	<label>I want to receive news.</label><br>
+      	<input type="checkbox" value="revista" name="check" checked />
+      	<label>Subscribe to the digital magazine.</label>
+</div>   
+
+		<button id="signUp" class="boton">SIGN UP</button>
+	</form>
+</div>
+
+<script type="text/javascript" src="js/countries.js"></script>
+<script type="text/javascript" src="js/sha256.js"></script>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+</body>
+</html>
