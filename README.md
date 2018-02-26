@@ -2,9 +2,9 @@
 
 Realizamos búsquedas con distintas entradas y aparecen todos los productos, no es sensible a caracteres. 
 
-![Búsqueda](Busqueda.png)
+![Búsqueda](https://github.com/AlexTodeaH/AJAX/blob/master/Busqueda.PNG)
 
-![Búsqueda](Busqueda_2.png)
+![Búsqueda](https://github.com/AlexTodeaH/AJAX/blob/master/Busqueda_2.PNG)
 
 ## Inserción de paises
 
