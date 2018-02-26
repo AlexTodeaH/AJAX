@@ -95,6 +95,31 @@ if(getCookie('cookies')=='aceptadas'){
 	$(".cookies").css('display','none');
 }
 
+// Funcion para crear las cookies dado nombre y valor
+
+function setCookie(nombre,valor){
+  document.cookie = nombre + "=" + valor + ";path=/";
+}
+
+// Funcion para obtener el valor de la cookie dado un nombre
+
+function getCookie(nombre){
+  var biscuit = nombre + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(biscuit) == 0) return c.substring(biscuit.length,c.length);
+    }
+    return null;
+}
+
+// Funcion para borrar una cookie dado un nombre
+
+function dropCookie(name) {
+    setCookie(name,"",-1);
+}
+
 //               AJAX DATALIST
 
 $('#ajax').on('keyup',function () {
